@@ -10,11 +10,18 @@ from calculate_mangrove_data import Mangrove_data
 import ee
 import geemap.foliumap as gee
 import geemap
+import google.oauth2 as service_account
 
 # ee.Authenticate()
 # ee.Authenticate(project='dogwood-outcome-388110')
 # ee.Initialize()
-geemap.ee_initialize()
+# geemap.ee_initialize()
+
+def initialize_ee():
+    service_account_info = st.secrets["gee_service_account"]
+    credentials = service_account.Credentials.from_service_account_info(service_account_info)
+    ee.Initialize(credentials)
+initialize_ee()
 
 # st.set_page_config(layout="wide")
 
