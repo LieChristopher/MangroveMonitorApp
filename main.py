@@ -8,11 +8,13 @@ from calculate_mangrove_data import Mangrove_data
 # from calculate_mangrove_data import Mangrove_data
 
 import ee
+import geemap.foliumap as gee
+import geemap
 
 # ee.Authenticate()
 # ee.Authenticate(project='dogwood-outcome-388110')
-ee.Initialize()
-import geemap.foliumap as gee
+# ee.Initialize()
+geemap.ee_initialize()
 
 # st.set_page_config(layout="wide")
 
