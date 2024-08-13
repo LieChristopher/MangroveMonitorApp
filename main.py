@@ -12,6 +12,8 @@ import geemap.foliumap as gee
 import geemap
 import google.oauth2 as service_account
 
+st.set_page_config(page_title="Mangrove Monitor App")
+
 # ee.Authenticate()
 # ee.Authenticate(project='dogwood-outcome-388110')
 # ee.Initialize()
