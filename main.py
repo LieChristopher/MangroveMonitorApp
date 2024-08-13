@@ -12,22 +12,9 @@ import geemap.foliumap as gee
 import geemap
 import google.oauth2 as service_account
 
-st.set_page_config(page_title="Mangrove Monitor App")
-
-# ee.Authenticate()
-# ee.Authenticate(project='dogwood-outcome-388110')
-# ee.Initialize()
-# geemap.ee_initialize()
+st.set_page_config(page_title="Mangrove Monitor App - Christopher Lie")
 
 geemap.ee_initialize()
-
-# def initialize_ee():
-#     service_account_info = st.secrets["gee_service_account"]
-#     credentials = service_account.Credentials.from_service_account_info(service_account_info)
-#     ee.Initialize(credentials)
-# initialize_ee()
-
-# st.set_page_config(layout="wide")
 
 # select dropdown
 location_codes = [
@@ -143,8 +130,6 @@ with col_map:
     st.caption(f'{mangrove_data_per_year.pixel_dimensions[0]}px x {mangrove_data_per_year.pixel_dimensions[1]}px')
 
 year_idx = year_list.index(year)
-
-
 
 
 
@@ -369,9 +354,9 @@ with history_area:
 
 
 
-
 about_area.write("About this app")
 about_area.caption("This Streamlit App is used to display mangrove carbon stock information in Papua, one of the regions with the largest mangrove carbon stock globally.")
 about_area.caption("The carbon stock is approximated using predicted mangrove coverage in an area and the average carbon stock data by Sasmito, et. al.")
 about_area.caption("The mangrove coverage is predicted using a Deep Learning U-Net model designed by Lomeo and Singh based on Ronneberger et. al. trained on Sentinel-2 satellite images and mangrove categorization data by Worthington, et. al.")
-about_area.caption("The web app is created by Christopher from BINUS University, Indonesia to fulfill his undergraduate program graduation requirements.")
+about_area.caption("The web app is created by Christopher Lie from BINUS University, Indonesia to fulfill his undergraduate program graduation requirements.")
+about_area.caption("www.linkedin.com/in/christopher-lie/   github.com/LieChristopher/")
