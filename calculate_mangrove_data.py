@@ -1,7 +1,8 @@
 import ee
 import streamlit as st
+import geemap
 
-ee.Initialize()
+geemap.ee_initialize()
 
 @st.cache_data
 def get_data(image_url):
