@@ -1,6 +1,6 @@
 import ee
 import streamlit as st
-import geemap
+import geemap.ee_initialize
 
 geemap.ee_initialize()
 
