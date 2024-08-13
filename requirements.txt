@@ -5,5 +5,5 @@ streamlit
 earthengine-api==0.1.386
 eefolium==0.2.0
 leafmap==0.30.1
-pkg_resources
+setuptools
 
