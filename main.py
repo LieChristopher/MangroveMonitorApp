@@ -9,7 +9,7 @@ from calculate_mangrove_data import Mangrove_data
 
 import ee
 import geemap.foliumap as gee
-import geemap
+import geemap.ee_initialize
 import google.oauth2 as service_account
 
 # ee.Authenticate()
