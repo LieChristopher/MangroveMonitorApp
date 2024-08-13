@@ -359,4 +359,4 @@ about_area.caption("This Streamlit App is used to display mangrove carbon stock 
 about_area.caption("The carbon stock is approximated using predicted mangrove coverage in an area and the average carbon stock data by Sasmito, et. al.")
 about_area.caption("The mangrove coverage is predicted using a Deep Learning U-Net model designed by Lomeo and Singh based on Ronneberger et. al. trained on Sentinel-2 satellite images and mangrove categorization data by Worthington, et. al.")
 about_area.caption("The web app is created by Christopher Lie from BINUS University, Indonesia to fulfill his undergraduate program graduation requirements.")
-about_area.caption("www.linkedin.com/in/christopher-lie/   github.com/LieChristopher/")
+about_area.caption("www.linkedin.com/in/christopher-lie/\nwww.github.com/LieChristopher/")
