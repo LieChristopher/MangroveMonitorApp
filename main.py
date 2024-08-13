@@ -17,11 +17,13 @@ import google.oauth2 as service_account
 # ee.Initialize()
 # geemap.ee_initialize()
 
-def initialize_ee():
-    service_account_info = st.secrets["gee_service_account"]
-    credentials = service_account.Credentials.from_service_account_info(service_account_info)
-    ee.Initialize(credentials)
-initialize_ee()
+geemap.ee_initialize()
+
+# def initialize_ee():
+#     service_account_info = st.secrets["gee_service_account"]
+#     credentials = service_account.Credentials.from_service_account_info(service_account_info)
+#     ee.Initialize(credentials)
+# initialize_ee()
 
 # st.set_page_config(layout="wide")
 
